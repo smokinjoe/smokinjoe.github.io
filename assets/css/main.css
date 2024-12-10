@@ -2522,6 +2522,7 @@ ul.social li a.fa-google-plus:hover {
   #banner {
     padding: 6em 0;
     /* margin: 3em 0 0 0; */
+    background-size: cover;
     margin: 0;
   }
 
@@ -2687,7 +2688,7 @@ ul.social li a.fa-google-plus:hover {
     -webkit-transition: -webkit-transform 0.5s ease;
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
-    display: block;
+    /* display: block; */
     height: 44px;
     left: 0;
     position: fixed;
