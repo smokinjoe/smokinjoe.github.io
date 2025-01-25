@@ -174,7 +174,6 @@ html {
 
 body {
   background: #252122;
-  background-image: url("images/bg02.png");
 }
 
 body.is-preload *,
@@ -2276,24 +2275,37 @@ ul.social li a.fa-google-plus:hover {
 /* Banner */
 
 #banner {
-  /* background: #cce8f4 url("../../images/pic01.jpg"); */
-  background: #cce8f4 url("../../images/holiday-banner.jpg");
   background-position: center center;
-  /* background-size: auto 100%; */
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
-  padding: 8em 0;
-  /* margin: 4em 0 0 0; */
+  padding: 12em 0;
   margin: 0;
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  object-fit: cover;
 }
 
 #banner header {
   background-color: rgba(34, 30, 31, 0.98);
   display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 2.5em 5em;
   border-radius: 5px;
+  z-index: 10;
 }
 
 #banner header h2 {
@@ -2374,7 +2386,7 @@ ul.social li a.fa-google-plus:hover {
 
 #main {
   position: relative;
-  background: #f7f7f7 url("images/bg02.png");
+  background: #f7f7f7;
   padding: 4em 0 4em 0;
 }
 
@@ -2384,14 +2396,13 @@ ul.social li a.fa-google-plus:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: url("images/bg01.png");
   background-size: 100% 100%;
   z-index: 0;
   opacity: 0.1;
 }
 
 #main .major h2 {
-  background: #f7f7f7 url("images/bg02.png");
+  background: #f7f7f7;
 }
 
 /* Footer */
@@ -2408,7 +2419,6 @@ ul.social li a.fa-google-plus:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: url("images/bg01.png");
   background-size: 100% 100%;
   z-index: 0;
   opacity: 0.5;
@@ -2759,7 +2769,6 @@ ul.social li a.fa-google-plus:hover {
     width: 275px;
     z-index: 10002;
     color: #858484;
-    background-image: url("images/bg02.png");
     box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
   }
 
